@@ -1,7 +1,8 @@
-package com.example.challenge99
+package com.example.challenge99.ui.menu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.challenge99.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
