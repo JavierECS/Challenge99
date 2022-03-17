@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Challenge99</string>
+    <string name="find_bttn">Buscar</string>
+    <string name="API_KEY">AIzaSyBGM5MLPnRuYZ5mQVGmASKxxw10UVky7p8</string>
 </resources>

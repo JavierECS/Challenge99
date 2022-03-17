@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="true"
-    tools:context=".ui.menu.BaseActivity"
-    android:background="@color/background_gray" android:id="@+id/relativeLayout">
+    android:orientation="vertical"
+    tools:context=".ui.menu.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/spin_thing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/findButton"
+            android:text="@string/find_bttn"/>
+
+    </LinearLayout>
 
     <fragment
-        android:id="@+id/navHost"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/map_Fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
@@ -21,5 +41,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_main" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
